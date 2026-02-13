@@ -33,6 +33,7 @@ public class ScheduleService {
         );
     }
 
+
     @Transactional(readOnly = true)
     public List<ScheduleResponseDto> getAllSchedules() {
         List<Schedule> schedules = scheduleRepository.findAll();
